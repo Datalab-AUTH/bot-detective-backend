@@ -128,3 +128,6 @@ dump.txt
 .env
 stuff
 # End of https://www.gitignore.io/api/python
+
+# local testing venv
+venv
