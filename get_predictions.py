@@ -144,4 +144,5 @@ def predict(username, user_oauth_token, user_oauth_token_secret):
 	    "tweets_used": tweets_used,
 		**ef.explain(positive_features, negative_features)
 	}).inserted_id
+	print("*** Calculated Score: " + str(score))
 	return ({"avg_user_score": score, **ef.explain(positive_features, negative_features), "analysis_id": str(analysis_id)})
